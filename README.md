@@ -1,2 +1,2 @@
 # Error_checker
-VBA project
+VBA macro which prints addresses of all cells containing errors within a range. 

@@ -1,0 +1,19 @@
+Sub ErrorCheck()
+
+Dim Tbl As Range
+
+Set Tbl = Sheet5.Range("A19", Range("A19").End(xlToRight) _
+.End(xlDown))
+
+For r = 19 To Tbl.End(xlDown).Row
+    For c = 1 To Tbl.Columns.Count
+
+        If IsError(Cells(r, c).Value) = True Then
+        Debug.Print Cells(r, c).Address
+    
+        End If
+        
+    Next c
+Next r
+
+End Sub
